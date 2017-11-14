@@ -1,0 +1,24 @@
+<h1>Inside Hello Html.erb </h1>
+
+<%= 1 + 3  %>
+
+<% target = "Yes Dr. Phil"    %><br/>
+
+<%= "Was That Dr. Phil #{target} "  %><br/>
+
+<% @array.each do |n| %>
+
+<%= n %><br/>
+
+<% end %>
+
+<%=link_to("Index Page", {:action => 'index'})  %>
+
+<br/>
+
+ID: <%= @id %><br/>
+
+ID: <%= params[:id]  %><br/>
+
+Page: <%= @page  %><br/>
+
