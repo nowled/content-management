@@ -5,4 +5,8 @@ class AdminUser < ApplicationRecord
     # this corresponding table or just rename the file to the new table name:
     # Admin_user
     #self.table_name = "admin_users"
+      has_and_belongs_to_many  :pages
+      has_many :section_edits
+      has_many :sections, :through => :section_edits
+    
 end
